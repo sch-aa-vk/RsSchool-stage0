@@ -412,8 +412,8 @@ header {
 }
 
 .header__logo-link:hover, .header__logo-link:focus, .header__logo-link:active {
-    opacity: .75;
     cursor: pointer;
+    filter: invert(31%) sepia(15%) saturate(648%) hue-rotate(7deg) brightness(98%) contrast(91%);
 }
 
 .header__list {
@@ -441,12 +441,30 @@ header {
     margin-right: 9px;
 }
 
+.header__link-en {
+    font-size: 20px;
+    line-height: 50px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.header__link-en:hover, .header__link-en:active, .header__link-en:focus {
+    cursor: pointer;
+}
+
 .header__item-slash {
     margin-right: 8px;
 }
 
+.header__link-slash {
+    font-size: 20px;
+    line-height: 50px;
+    color: inherit;
+    text-decoration: none;
+}
+
 .header__link:hover, .header__link:focus, .header__link:active {
-    opacity: .75;
+    filter: invert(31%) sepia(15%) saturate(648%) hue-rotate(7deg) brightness(98%) contrast(91%);
     cursor: pointer;
 }
 
@@ -497,8 +515,12 @@ header {
     margin-top: 25px;
 }
 
+.hero__button-text:hover, .hero__button-text:active, .hero__button-text:focus {
+    cursor: pointer;
+    filter: invert(100%) sepia(10%) saturate(7489%) hue-rotate(247deg) brightness(116%) contrast(108%);
+}
+
 .hero__button:hover, .hero__button:focus, .hero__button:active {
-    opacity: .75;
     cursor: pointer;
 }
 
@@ -761,8 +783,11 @@ header {
     margin-right: 5px;
 }
 
+.nature__button-text:hover, .nature__button-text:active, .nature__button-text:focus {
+    color: #fff;
+}
+
 .button__nature:hover, .button__nature:focus, .button__nature:active {
-    opacity: .75;
     cursor: pointer;
 }
 
@@ -778,7 +803,6 @@ header {
 }
 
 .button__autumn:hover, .button__autumn:focus, .button__autumn:active {
-    opacity: .75;
     cursor: pointer;
 }
 
@@ -853,7 +877,7 @@ header {
 }
 
 .video__playHover:hover, .video__playHover:focus, .video__playHover:active {
-    opacity: .75;
+    filter: invert(31%) sepia(15%) saturate(648%) hue-rotate(7deg) brightness(98%) contrast(91%);
     cursor: pointer;
 }
 
@@ -950,8 +974,11 @@ header {
     margin-left: 112px;
 }
 
+.order__button-text:hover, .order__button-text:active, .order__button-text:focus {
+    filter: invert(100%) sepia(10%) saturate(7489%) hue-rotate(247deg) brightness(116%) contrast(108%);
+}
+
 .order__shooting:hover, .order__shooting:focus, .order__shooting:active {
-    opacity: .75;
     cursor: pointer;
 }
 
@@ -1060,8 +1087,11 @@ header {
     margin-top: 30px;
 }
 
+.contact__button-text:active, .contact__button-text:hover, .contact__button-text:focus {
+    filter: invert(100%) sepia(10%) saturate(7489%) hue-rotate(247deg) brightness(116%) contrast(108%);
+}
+
 .contact__button:hover, .contact__button:focus, .contact__button:active {
-    opacity: .75;
     cursor: pointer;
 }
 
@@ -1097,7 +1127,7 @@ footer {
 }
 
 .footer__github:hover, .footer__github:focus, .footer__github:active {
-    opacity: .75;
+    filter: invert(31%) sepia(15%) saturate(648%) hue-rotate(7deg) brightness(98%) contrast(91%);
     cursor: pointer;
 }
 
@@ -1112,7 +1142,7 @@ footer {
 }
 
 .footer__rsschool:hover, .footer__rsschool:focus, .footer__rsschool:active {
-    opacity: .75;
+    filter: invert(31%) sepia(15%) saturate(648%) hue-rotate(7deg) brightness(98%) contrast(91%);
     cursor: pointer;
 }
 
@@ -1124,7 +1154,7 @@ footer {
 }
 
 .social-list:hover, .social-list:focus, .social-list:active {
-    opacity: .75;
+    filter: invert(31%) sepia(15%) saturate(648%) hue-rotate(7deg) brightness(98%) contrast(91%);
     cursor: pointer;
 }
 
