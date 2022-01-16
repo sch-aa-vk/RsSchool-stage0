@@ -515,13 +515,9 @@ header {
     margin-top: 25px;
 }
 
-.hero__button-text:hover, .hero__button-text:active, .hero__button-text:focus {
-    cursor: pointer;
-    filter: invert(100%) sepia(10%) saturate(7489%) hue-rotate(247deg) brightness(116%) contrast(108%);
-}
-
 .hero__button:hover, .hero__button:focus, .hero__button:active {
     cursor: pointer;
+    color: white;
 }
 
 /* hero styles  end */
@@ -783,12 +779,9 @@ header {
     margin-right: 5px;
 }
 
-.nature__button-text:hover, .nature__button-text:active, .nature__button-text:focus {
-    color: #fff;
-}
-
 .button__nature:hover, .button__nature:focus, .button__nature:active {
     cursor: pointer;
+    color: white;
 }
 
 .button__autumn {
@@ -804,6 +797,7 @@ header {
 
 .button__autumn:hover, .button__autumn:focus, .button__autumn:active {
     cursor: pointer;
+    color: white;
 }
 
 .portfolio__wrapper {
@@ -974,12 +968,9 @@ header {
     margin-left: 112px;
 }
 
-.order__button-text:hover, .order__button-text:active, .order__button-text:focus {
-    filter: invert(100%) sepia(10%) saturate(7489%) hue-rotate(247deg) brightness(116%) contrast(108%);
-}
-
 .order__shooting:hover, .order__shooting:focus, .order__shooting:active {
     cursor: pointer;
+    color: white;
 }
 
 /* price styles end */
@@ -1087,12 +1078,9 @@ header {
     margin-top: 30px;
 }
 
-.contact__button-text:active, .contact__button-text:hover, .contact__button-text:focus {
-    filter: invert(100%) sepia(10%) saturate(7489%) hue-rotate(247deg) brightness(116%) contrast(108%);
-}
-
 .contact__button:hover, .contact__button:focus, .contact__button:active {
     cursor: pointer;
+    color: white;
 }
 
 /* contact styles end */
