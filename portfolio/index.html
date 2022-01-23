@@ -36,16 +36,33 @@
                 <li class="header__item">
                     <a href="#contact" class="header__link">Contacts</a>
                 </li>
+            </ul>
+            <ul class="header__switch-lang">
                 <li class="header__item-en">
                     <a href="" class="header__link-en">en</a>
                 </li>
                 <li class="header__item-slash">
                     <a class="header__link-slash">/</a>
                 </li>
-                <li class="header__item">
+                <li class="header__item-ru">
                     <a href="" class="header__link">ru</a>
                 </li>
             </ul>
+            <div class="header__hamburger-menu">
+                <input id="menu__toggle" type="checkbox" />
+                <label class="menu__btn" for="menu__toggle">
+                    <span></span>
+                </label>
+                <ul class="hamburger-menu">
+                    <div class="hamburger-menu__container">
+                        <li><a class="menu__item" href="#skills" id="title-link">Skills</a></li>
+                        <li><a class="menu__item" href="#portfolio" id="title-link">Portfolio</a></li>
+                        <li><a class="menu__item" href="#video" id="title-link">Video</a></li>
+                        <li><a class="menu__item" href="#price" id="title-link">Price</a></li>
+                        <li><a class="menu__item" href="#contact" id="title-link">Contacts</a></li>
+                    </div>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -60,33 +77,37 @@
         </section>
 
         <section class="skills" id="skills">
-            <h2 class="skills__title">Skills</h2>
+            <div class="section__title-container">
+                <h2 class="section__title">Skills</h2>
+            </div>
             <div class="skills__items">
-                <div class="skills__item__dph">
-                    <img src="assets/svg/camera__logo.svg" alt="camera" class="skills__dph__logo">
-                    <h3 class="skills__dph__title">Digital photography</h3>
-                    <p class="skills__dph__dscp">High-quality photos in the studio and on the nature</p>
+                <div class="skills__item">
+                    <img src="assets/svg/camera__logo.svg" alt="camera" class="skills__item__logo">
+                    <h3 class="skills__item__title">Digital photography</h3>
+                    <p class="skills__item__dscp">High-quality photos in the studio and on the nature</p>
                 </div>
-                <div class="skill__item__vsh">
-                    <img src="assets/svg/video__logo.svg" alt="film" class="skills__vsh__logo">
-                    <h3 class="skills__vsh__title">Video Shooting</h3>
-                    <p class="skills__vsh__dscp">Capture your moments so that they always stay with you</p>
+                <div class="skills__item">
+                    <img src="assets/svg/video__logo.svg" alt="film" class="skills__item__logo">
+                    <h3 class="skills__item__title">Video shooting</h3>
+                    <p class="skills__item__dscp">Capture your moments so that they always stay with you</p>
                 </div>
-                <div class="skills__item__retouch">
-                    <img src="assets/svg/image__logo.svg" alt="picture" class="skills__retouch__logo">
-                    <h3 class="skills__retouch__title">Retouch</h3>
-                    <p class="skills__retouch__dscp">I strive to make photography surpass reality</p>
+                <div class="skills__item">
+                    <img src="assets/svg/image__logo.svg" alt="picture" class="skills__item__logo">
+                    <h3 class="skills__item__title">Retouch</h3>
+                    <p class="skills__item__dscp">I strive to make photography surpass reality</p>
                 </div>
-                <div class="skills__item__audio">
-                    <img src="assets/svg/mic__logo.svg" alt="microphone" class="skills__audio__logo">
-                    <h3 class="skills__audio__title">Audio</h3>
-                    <p class="skills__audio__dscp">Professional sounds recording for video, advertising, portfolio</p>
+                <div class="skills__item">
+                    <img src="assets/svg/mic__logo.svg" alt="microphone" class="skills__item__logo">
+                    <h3 class="skills__item__title">Audio</h3>
+                    <p class="skills__item__dscp">Professional sounds recording for video, advertising, portfolio</p>
                 </div>
             </div>
         </section>
 
         <section class="portfolio" id="portfolio">
-            <h2 class="portfolio__title">Portfolio</h2>
+            <div class="section__title-container">
+                <h2 class="section__title">Portfolio</h2>
+            </div>
             <div class="portfolio__buttons">
                 <button class="button__nature">Winter</button>
                 <button class="button__nature">Spring</button>
@@ -104,17 +125,21 @@
         </section>
 
         <section class="video" id="video">
-            <h2 class="video__title">Video</h2>
+            <div class="section__title-container">
+                <h2 class="section__title">Video</h2>
+            </div>
             <div class="video__items">
                 <img src="assets/svg/Play_hover.svg" alt="play hover" class="video__playHover">
             </div>
         </section>
 
         <section class="price" id="price">
-            <h2 class="price__title">Price</h2>
+            <div class="section__title-container">
+                <h2 class="section__title">Price</h2>
+            </div>
             <div class="price__wrapper">
                 <div class="wrapper__box">
-                    <h3 class="wrapper__title">Standart</h3>
+                    <h3 class="wrapper__title">Standard</h3>
                     <p class="wrapper__price">500 $</p>
                     <div class="wrapper__dscp">
                         <p>
@@ -132,7 +157,7 @@
                     <p class="wrapper__price">700 $</p>
                     <div class="wrapper__dscp">
                         <p>
-                            One or two location <br>
+                            One or two locations <br>
                             200 photos in color <br>
                             20 photos in retouch <br>
                             Readiness 1-2 weeks <br>
