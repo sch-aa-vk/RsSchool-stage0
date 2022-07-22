@@ -15,7 +15,7 @@ header {
     display: flex;
     align-items: center;
     height: 90px;
-    background: url(/travel/assets/images/preview.jpg);
+    background: url(assets/images/preview.jpg);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
 
@@ -91,7 +91,7 @@ header {
     position: relative;
     z-index: -1;
     height: 675px;
-    background: url(/travel/assets/images/preview.jpg) bottom;
+    background: url(assets/images/preview.jpg) bottom;
 }
 
 .preview-wrapper {
@@ -355,7 +355,7 @@ header {
 }
 
 .stories-wrapper-1 {
-    background: url(/travel/assets/images/footer-img.jpg);
+    background: url(assets/images/footer-img.jpg);
     background-position: top;
 }
 
@@ -446,7 +446,7 @@ footer {
     align-items: center;
     display: flex;
     height: 61px;
-    background: url(/travel/assets/images/footer-img.jpg) bottom;
+    background: url(assets/images/footer-img.jpg) bottom;
 }
 
 footer p {
