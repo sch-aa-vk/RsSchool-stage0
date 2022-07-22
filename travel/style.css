@@ -4,6 +4,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital@0;1&display=swap');
 
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     box-sizing: border-box;
     width: 1440px;
@@ -304,17 +308,11 @@ header {
 .destinations-dot {
     width: 20px;
     height: 20px;
-    background: #f2785c80;
-    border-radius: 50%;
-    border-style: none;
 }
 
 .destinations-center-dot {
     width: 20px;
     height: 20px;
-    background: #f2785c;
-    border-radius: 50%;
-    border-style: none;
 }
 
 .destinations-find-more {
@@ -444,6 +442,7 @@ header {
 footer {
     display: flex;
     align-items: center;
+    justify-content: space-between;
     display: flex;
     height: 61px;
     background: url(assets/images/footer-img.jpg) bottom;
@@ -452,8 +451,7 @@ footer {
 footer p {
     margin: 0;
     margin-left: 590px;
-    margin-right: 330px;
-    padding: 0%;
+    padding: 0;
     font-family: 'Red Hat Text', sans-serif;
     font-weight: 500;
     font-size: 16px;
@@ -461,17 +459,33 @@ footer p {
     color: #ffffff;
 }
 
-footer nav {
+footer ul {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 24.12px;
     height: 61px;
-}
-
-footer nav ul {
+    margin: 0;
+    margin-right: 120px;
     padding: 0;
     list-style-type: none;
 }
 
-footer nav img {
-    display: flex;
-    flex-flow: row wrap;
-    height: 33.65px;
+footer ul img {
+    max-height: 28px;
+    max-width: 28px;
+}
+
+footer ul a {
+    font-family: 'Red Hat Text', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.youtube-logo {
+    height: 60px;
+    width: 60px;
 }
