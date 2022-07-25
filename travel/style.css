@@ -21,13 +21,14 @@ img {
 
 html {
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 body {
-    box-sizing: border-box;
-    width: 1440px;
+    box-sizing: inherit;
     margin: 0;
     padding: 0;
+    width: 1440px;
 }
 
 header {
@@ -387,8 +388,10 @@ header {
     align-items: center;
     justify-content: flex-end;
     gap: 30px;
-    width: 1440px;
     height: 1230px;
+    width: 1440px;
+    margin: 0;
+    padding: 0;
     padding-bottom: 40px;
     background: #ffffffb3;
 }
