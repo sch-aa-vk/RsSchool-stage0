@@ -3,11 +3,16 @@
 
 html {
     box-sizing: border-box;
+    width: 100vw;
 }
 *, *::after, *::before {
     box-sizing: inherit;
     margin: 0;
     padding: 0;
+}
+
+body {
+    overflow-x: hidden;
 }
 
 h2 {
@@ -16,6 +21,7 @@ h2 {
     font-weight: 500;
     font-size: 40px;
     line-height: 53px;
+    padding-top: 80px;
     color: #f2785c;
 }
 
@@ -70,6 +76,7 @@ button:hover {
     h2 {
         font-size: 14px;
         line-height: 19px;
+        padding-top: 20px;
     }
     p {
         font-size: 10px;
@@ -91,14 +98,14 @@ button:hover {
 
 @media (max-width: 390px) {
     .wrapper {
-        margin: 0 15px;
+        margin: 0 calc(100vw / 26);
     }
 }
 
 .header {
     position: absolute;
     z-index: 1;
-    height: 90px;
+    min-height: 90px;
     width: 100vw;
     background: #f2785cb3;
     box-shadow: 0px 4px 4px #0d606f80;
@@ -121,7 +128,7 @@ button:hover {
     font-family: 'Magra', sans-serif;
     font-style: normal;
     font-weight: 600;
-    font-size: 32px;
+    font-size: calc(100vw / 45);
     line-height: 39px;
     color: #ffffff;
 }
@@ -137,7 +144,7 @@ button:hover {
 
 .header_list {
     display: flex;
-    gap: 42px;
+    gap: calc(100vw * 7 / 240);
     margin: 0;
     margin-left: -30px;
 }
@@ -227,28 +234,6 @@ button:hover {
     padding-top: 88.46px;
 }
 
-@media (max-width: 800px) {
-    .header {
-        background: none;
-        box-shadow: none;
-    }
-    .header_logo_text {
-        display: none;
-    }
-    .header_list {
-        display: none;
-    }
-    .header_button {
-        display: none;
-    }
-    .hamburger {
-        display: flex;
-    }
-    .hamburger_list.open {
-        right: 0;
-    }
-}
-
 @media (max-width: 390px) {
     .header {
         position: absolute;
@@ -273,6 +258,9 @@ button:hover {
     }
     .header_list {
         display: none;
+    }
+    .header_nav {
+        align-self: flex-start;
     }
     .header_button {
         display: none;
@@ -347,38 +335,6 @@ button:hover {
     margin-right: 18px;
 }
 
-@media (max-width: 800px) {
-    .preview_wrapper h1 {
-        display: none;
-    }
-    .preview_wrapper p {
-        display: none;
-    }
-    .preview_wrapper_div {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        width: inherit;
-        height: 48px;
-        background: #ffffffb3;
-        border-radius: 16px;
-    }
-    .preview_wrapper_div p {
-        display: inline;
-        font-size: 14px;
-        line-height: 17px;
-        padding-left: 16.55px;
-        margin: 0;
-    }
-    .preview_wrapper_div button {
-        font-size: 11px;
-        line-height: 15px;
-        width: 92px;
-        height: 30px;
-        margin-right: 9px;
-    }
-}
-
 @media (max-width: 390px) {
     .preview {
         position: relative;
@@ -419,5 +375,84 @@ button:hover {
         width: 92px;
         height: 30px;
         margin-right: 9px;
+    }
+}
+
+.steps_wrapper {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+
+.steps_list {
+    display: flex;
+    flex-flow: row wrap;
+    width: calc(100vw - 2 * (100vw / 12));
+    padding-top: 40px;
+}
+
+.steps_item {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    gap: 30px;
+}
+
+.steps_square {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 16px;
+    background: #f2785c;
+}
+
+.second {
+    padding-left: 231px;
+    padding-right: 160px;
+}
+
+@media (max-width: 1439px) {
+    .steps_list {
+        justify-content: space-between;
+    }
+    .second {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+.steps_square img {
+    max-width: 60px;
+    max-height: 52px;
+    margin: auto;
+}
+
+@media (max-width: 390px) {
+    .steps_list {
+        width: calc(100vw - 2 * (100vw / 26));
+        padding-top: 20px;
+    }
+    .steps_item {
+        gap: 20px;
+    }
+    .steps_square {
+        width: 70px;
+        height: 70px;
+    }
+    .first {
+        align-items: flex-start;
+        text-align: left;
+        max-width: 94px;
+    }
+    .third {
+        align-items: flex-end;
+        text-align: right;
+        max-width: 98px;
+    }
+    .steps_square img {
+        max-width: 40px;
+        max-height: 35px;
     }
 }
